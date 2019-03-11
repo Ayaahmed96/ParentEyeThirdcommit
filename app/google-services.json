@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1013321169727",
+    "firebase_url": "https://parenteye-1b448.firebaseio.com",
+    "project_id": "parenteye-1b448",
+    "storage_bucket": "parenteye-1b448.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013321169727:android:666f94e27c8bb722",
+        "android_client_info": {
+          "package_name": "com.example.parenteye"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013321169727-pd7357jcd1tincarh0deg8k48iofog96.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.parenteye",
+            "certificate_hash": "43115c1e62f66326687a6b6d7672fc1e55da8d7a"
+          }
+        },
+        {
+          "client_id": "1013321169727-h9b9m92q2n04mhqpta95bbm1r581dc3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOv9hyCRLUSF5na-1kMR5P1D0hibGP7Hw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013321169727-h9b9m92q2n04mhqpta95bbm1r581dc3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
