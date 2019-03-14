@@ -2,7 +2,7 @@ package com.example.parenteye;
 
 import java.util.List;
 
-public class Relatives {
+public class Friends {
     private  String id;
     private String userId;
     private String userFriends;
@@ -12,11 +12,11 @@ public class Relatives {
 
 
 
-    public Relatives(){
+    public Friends(){
 
     }
 
-    public Relatives(String id, String userId, String userFriends) {
+    public Friends(String id, String userId, String userFriends) {
         this.id = id;
         this.userId = userId;
         this.userFriends = userFriends;

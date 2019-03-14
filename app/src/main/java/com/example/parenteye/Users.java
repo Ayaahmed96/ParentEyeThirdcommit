@@ -13,23 +13,32 @@ public class Users {
     private String RoleId;
     private boolean ActiveStatus;
     private String profile_pic_id;
+    private String cover_pic_id;
 
 
-    public Users(String userId, String username, Date dateofbirth, String location, boolean gender, String roleId, boolean activeStatus, String profile_pic_id) {
+    public Users(String userId, String username,Date dateofbirth, String location, boolean gender, String roleId, boolean activeStatus, String profile_pic_id) {
 
         this.userId = userId;
         Username = username;
-        this.dateofbirth = dateofbirth;
+      //  this.dateofbirth = dateofbirth;
         this.location = location;
         this.gender = gender;
         RoleId = roleId;
         ActiveStatus = activeStatus;
         this.profile_pic_id = profile_pic_id;
+        this.dateofbirth=dateofbirth;
     }
   public Users(){
 
   }
 
+    public void setCover_pic_id(String cover_pic_id) {
+        this.cover_pic_id = cover_pic_id;
+    }
+
+    public String getCover_pic_id() {
+        return cover_pic_id;
+    }
 
     public void setUserId(String userId) {
         this.userId = userId;
@@ -39,7 +48,7 @@ public class Users {
         Username = username;
     }
 
-    public void setDateofbirth(Date dateofbirth) {
+  public void setDateofbirth(Date dateofbirth) {
         this.dateofbirth = dateofbirth;
     }
 
@@ -71,6 +80,7 @@ public class Users {
     public Date getDateofbirth() {
         return dateofbirth;
     }
+
 
     public String getLocation() {
         return location;

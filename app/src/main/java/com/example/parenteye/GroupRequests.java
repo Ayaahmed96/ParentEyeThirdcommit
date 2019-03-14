@@ -2,9 +2,9 @@ package com.example.parenteye;
 
 public class GroupRequests {
     private String id;
-    private String GroupId;
+    private String GroupId; // dh el id eli byshawer 3la randomkey fe gadwel community
     private String Userid;
-    private Integer state;
+    private Integer state;   //o if rejected , 1 if pending
 
     public GroupRequests(){
 

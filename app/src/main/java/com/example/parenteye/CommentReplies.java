@@ -8,19 +8,48 @@ public class CommentReplies {
     private String CommentRepliesid;
     private  String userId;
     private String commentId;
+    private String Replycontent;
+    private boolean  hasimage;  //1 if reply contain image and 0 if reply do not
+    private String imageid;
     private Time time;
 
     public CommentReplies(){
 
     }
 
-    public CommentReplies(String commentRepliesid, String userId, String commentId, Time time) {
+    public CommentReplies(String commentRepliesid, String userId, String commentId, String replycontent, boolean hasimage, String imageid, Time time) {
         CommentRepliesid = commentRepliesid;
         this.userId = userId;
         this.commentId = commentId;
+        Replycontent = replycontent;
+        this.hasimage = hasimage;
+        this.imageid = imageid;
         this.time = time;
     }
 
+    public String getReplycontent() {
+        return Replycontent;
+    }
+
+    public boolean isHasimage() {
+        return hasimage;
+    }
+
+    public String getImageid() {
+        return imageid;
+    }
+
+    public void setReplycontent(String replycontent) {
+        Replycontent = replycontent;
+    }
+
+    public void setHasimage(boolean hasimage) {
+        this.hasimage = hasimage;
+    }
+
+    public void setImageid(String imageid) {
+        this.imageid = imageid;
+    }
 
     public void setCommentRepliesid(String commentRepliesid) {
         CommentRepliesid = commentRepliesid;

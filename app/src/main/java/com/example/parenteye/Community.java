@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Community {
     private String CommunityId;
+    private String typeid;  //1 if group and 2 if page
     private Date createdDate;
     private String coverPhotoId;
     private String PhotoId;
@@ -15,13 +16,22 @@ public class Community {
     public Community(){
 
     }
-    public Community(String communityId, Date createdDate, String coverPhotoId, String photoId, String adminId, String typeId) {
+    public Community(String communityId,String typeid, Date createdDate, String coverPhotoId, String photoId, String adminId, String typeId) {
         CommunityId = communityId;
         this.createdDate = createdDate;
         this.coverPhotoId = coverPhotoId;
+        this.typeid=typeId;
         PhotoId = photoId;
         AdminId = adminId;
         this.typeId = typeId;
+    }
+
+    public void setTypeid(String typeid) {
+        this.typeid = typeid;
+    }
+
+    public String getTypeid() {
+        return typeid;
     }
 
     public void setCommunityId(String communityId) {

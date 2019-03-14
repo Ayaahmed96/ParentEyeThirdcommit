@@ -7,7 +7,7 @@ public class FriendRequest {
     private String friendRequestid;
     private String Senderid;
     private String Recieverid;
-    private Integer state;
+    private Integer state;  //0 if ignore and 1 if pending
     private Time time;
 
 

@@ -29,23 +29,35 @@ public class PostAdapter extends ArrayAdapter<custom_posts_returned> {
                     R.layout.list_posts, parent, false);
         }
        custom_posts_returned post= getItem(position);
-        TextView posttext=(TextView) postlist.findViewById(R.id.post_text);
-        posttext.setText(post.getPost_text());
-        TextView postdate=(TextView) postlist.findViewById(R.id.post_date);
-        postdate.setText(post.getPost_date().toString());
+        TextView postownername=(TextView) postlist.findViewById(R.id.postowner);
+        postownername.setText(post.getPost_owner_name());
+        TextView postDescription=(TextView) postlist.findViewById(R.id.postDescription);
+        if(post.getPost_text()!=null){
+            postDescription.setText(post.getPost_text());
+        }
+        else {
+            postDescription.setVisibility(View.GONE);
+        }
+
+        TextView postdate=(TextView) postlist.findViewById(R.id.postdate);
+        postdate.setText("1/1/2001");
+       // postdate.setText(post.getPost_date().toString());
+
         ImageView profileimage=(ImageView) postlist.findViewById(R.id.profile_post);
         ImageView postimage=(ImageView) postlist.findViewById(R.id.post_image);
+
         if(post.hasprofieimage()==true) {
            // profileimage.setImageResource(post.getProfile_image());
-           // profileimage.se
           //  img.setVisibility(View.VISIBLE);
-            profileimage.setVisibility(View.GONE);
+           // profileimage.setVisibility(View.GONE);
+            profileimage.setImageBitmap(post.getProfile_image());
         }
         else{
-            profileimage.setVisibility(View.GONE);
+            profileimage.setImageResource(R.drawable.defaultprofile);
+
         }
         if(post.haspostimage()==true){
-            postimage.setVisibility(View.GONE);
+            postimage.setImageBitmap(post.getPost_image());
         }
         else{
             postimage.setVisibility(View.GONE);

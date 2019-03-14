@@ -175,7 +175,7 @@ public class UserdataActivity extends AppCompatActivity {
                    */
                        upload_profile_pic();
                        //mAuth.getCurrentUser().getUid()
-
+                                                    //kan hena newdate
      Users newuser=new Users(mAuth.getCurrentUser().getUid(),name,newdate,useraddresse,isMale,"1",true,imagekey);
                        myRef.push().setValue(newuser).addOnCompleteListener(new OnCompleteListener<Void>() {
                            @Override
